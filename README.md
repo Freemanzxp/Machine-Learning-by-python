@@ -28,6 +28,9 @@
 - C4.5：根据**信息熵增率**进行最佳分割点的选择
 - CART：根据**基尼指数**进行最佳分割点的选择
 ## 使用方法：
-- 实例化DecisionTree，可将mode=ID3、C4.5、CART作为参数输入
-- 
-
+- 实例化DecisionTree，可将mode=ID3、C4.5、CART作为参数输入来选择决策树种类
+- fit（）          用训练集训练决策树
+- predict（）      用训练好的决策树预测测试集
+- show（）         画出决策树
+- model_save（）   保存模型，利用pickl库
+- model_load（）   载入之前训练好的模型
