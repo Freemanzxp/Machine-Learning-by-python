@@ -9,9 +9,15 @@
 
 # linear_model库
 ## LinearRegression
+提供了predict方法进行预测
+
 线性回归：
 - 最小二乘法：least_square
-- 梯度下降：
-  1.批量梯度下降gradientDescent、
-  2.随机梯度下降stochasticGradientDescent、
-  3.随机梯度改进stochasticGradientDescentNice（加入了random.choice，增加了随机性）
+- 梯度下降：1.批量梯度下降gradientDescent、2.随机梯度下降stochasticGradientDescent、3.随机梯度改进stochasticGradientDescentNice（加入了random.choice，增加了随机性）
+
+## LogisticRegression
+提供了predict方法进行预测
+
+逻辑回归（对数几率）：
+- 最小二乘法：least_square
+- 梯度下降：1.批量梯度下降gradientDescent、2.随机梯度下降stochasticGradientDescent、3.随机梯度改进stochasticGradientDescentNice（加入了random.choice，增加了随机性）
