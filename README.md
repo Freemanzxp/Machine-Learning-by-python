@@ -21,3 +21,10 @@
 逻辑回归（对数几率）：
 - 最小二乘法：least_square
 - 梯度下降：1.批量梯度下降gradientDescent、2.随机梯度下降stochasticGradientDescent、3.随机梯度改进stochasticGradientDescentNice（加入了random.choice，增加了随机性）
+
+# tree_model库
+决策树：包含ID3、C4.5、CART三种算法 
+- ID3：根据**信息熵增**进行最佳分割点的选择
+- C4.5：根据**信息熵增率**进行最佳分割点的选择
+- CART：根据**基尼指数**进行最佳分割点的选择
+
