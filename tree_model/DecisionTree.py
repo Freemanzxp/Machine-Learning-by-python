@@ -13,8 +13,8 @@ class DecisionTree:
     构建决策树：
     参数：model：ID3、C4.5、CART
     ID3:不能处理数值型数据，若出现了tree节点中未出现的value会报错
-    C4.5：
-    CART：
+    C4.5：在选择最佳分割时，为了减小计算复杂度，平均值取的为局部平均值，并不能完全保证决策树不偏好分割点少的特征
+    CART：基尼指数
     '''
 
     def __init__(self, mode='ID3'):
@@ -212,7 +212,6 @@ class DecisionTree:
         else:
             try:
                 data = np.array(data)
-                print(data)
             except:
                 raise TypeError("numpy.ndarray required for data")
         featList = tuple(['x' + str(i) for i in range(len(data[0])-1)])
